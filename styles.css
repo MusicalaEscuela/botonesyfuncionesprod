@@ -1,0 +1,121 @@
+:root {
+  --bg: #0b0f18;
+  --card: #131a26;
+  --text-main: #f1f5f9;
+  --text-muted: #a8b3c5;
+  --accent: #5ea4ff;
+  --accent-soft: rgba(94, 164, 255, 0.15);
+
+  --radius: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.header-text p {
+  margin: 2px 0 0 0;
+  color: var(--text-muted);
+}
+
+/* INTRO */
+.intro {
+  margin-bottom: 28px;
+  line-height: 1.55;
+}
+
+.callout {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 24px;
+  margin-bottom: 26px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 22px rgba(0,0,0,0.25);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.list li {
+  margin-bottom: 6px;
+}
+
+.steps li {
+  margin-bottom: 8px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin: 16px 0;
+}
+
+/* CONTROLS LIST */
+.controls li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.controls span {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* EXERCISES */
+.exercise {
+  margin-top: 18px;
+  padding: 16px;
+  background: rgba(255,255,255,0.04);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 42px;
+  padding-top: 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
